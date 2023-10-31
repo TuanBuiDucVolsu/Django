@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+  django_admin:
+    container_name: django_admin
+    restart: always
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    environment:
+      - DB_NAME=tuanbdpgdb
+      - DB_USER=tuanbd
+      - DB_PASSWORD=eminem1999
+      - DB_HOST=tuanbd_pg_admin 
+      - DB_PORT=5432
+    ports:
+      - 6001:8000
+    networks:
+      - mynetwork
+
+  postgretuanbd:
+    image: postgres
+    container_name: tuanbd_pg_admin
+    environment:
+      POSTGRES_DB: tuanbdpgdb
+      POSTGRES_USER: tuanbd
+      POSTGRES_PASSWORD: eminem1999
+    ports:
+      - "5432:5432"
+    networks:
+      - mynetwork  
+
+networks:
+  mynetwork: 
