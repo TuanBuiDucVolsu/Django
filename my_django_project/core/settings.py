@@ -28,6 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+TIME_ZONE = 'Asia/Ho_Chi_Minh'
 
 # Application definition
 
