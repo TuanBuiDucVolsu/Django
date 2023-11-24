@@ -22,6 +22,7 @@ services:
   postgretuanbd:
     image: postgres
     container_name: tuanbd_pg_admin
+    restart: always
     environment:
       POSTGRES_DB: tuanbdpgdb
       POSTGRES_USER: tuanbd
