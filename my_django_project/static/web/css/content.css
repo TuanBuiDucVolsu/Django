@@ -1,0 +1,21 @@
+@import url(base.css);
+
+:root{
+    --ck-padding-content: 20px;
+    --ck-width-content: 920px;
+}
+
+.ck-content{ font-family: var(--web-font-family); font-size: var(--web-font-size);}
+.ck-content p{ margin: 0 0 10px;}
+.ck-content .image img{ max-width: 100% !important; max-height: 100% !important; height: auto !important;}
+.ck-content .image>figcaption{ background: none !important; font-size: var(--web-font-size) !important; font-style: italic; padding: 5px 0 0 !important;}
+.ck-content .table table { overflow: hidden; table-layout: fixed; border: 1px double #b3b3b3; border-collapse: collapse; border-spacing: 0; height: 100%; width: 100%; }
+.ck-content .table td, .ck-content .table th { position: relative; }
+.ck-content .table table td, .ck-content .table table th { border: 1px solid #bfbfbf; min-width: 2em; padding: 0.4em; }
+
+/* Admin */
+.ck.ck-editor .ck-content{ padding: var(--ck-padding-content) !important;}
+.ck.ck-editor .ck-editor__main{ max-height: 700px !important; overflow: auto; border: 1px solid #CCC; background-color: #fafafa; padding: 0 !important;}
+.ck.ck-editor__editable_inline>:last-child{ margin-bottom: 0 !important;}
+.ck.ck-editor__editable_inline>:first-child{ margin-top: 0 !important;}
+.ck.ck-editor__main>.ck-editor__editable{ border: 0 !important; box-shadow: none !important; margin: 0 auto; width: var(--ck-width-content); max-width: 100% !important;}

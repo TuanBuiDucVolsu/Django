@@ -1,0 +1,6 @@
+.fa{ position: relative; display: inline-flex;}
+.fa::before{ width: 14px; height: 14px; content: ""; -webkit-mask-size: cover; mask-size: cover; background-color: #000;}
+
+.fa-phone-solid::before{ -webkit-mask: url(../images/svg/phone-solid.svg) no-repeat 50% 50%; mask: url(../images/svg/phone-solid.svg) no-repeat 50% 50%; }
+.fa-magnifying-glass-solid::before{ -webkit-mask: url(../images/svg/magnifying-glass-solid.svg) no-repeat 50% 50%; mask: url(../images/svg/magnifying-glass-solid.svg) no-repeat 50% 50%; }
+.fa-cart-shopping-solid::before{ -webkit-mask: url(../images/svg/cart-shopping-solid.svg) no-repeat 50% 50%; mask: url(../images/svg/cart-shopping-solid.svg) no-repeat 50% 50%; }

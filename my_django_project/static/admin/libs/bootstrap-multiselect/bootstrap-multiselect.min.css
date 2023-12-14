@@ -1,0 +1,40 @@
+span.multiselect-native-select { position: relative; }
+span.multiselect-native-select select { border: 0 !important; clip: rect(0 0 0 0) !important; height: 1px !important; margin: -1px -1px -1px -3px !important; overflow: hidden !important; padding: 0 !important; position: absolute !important; width: 1px !important; left: 50%; top: 30px; }
+.multiselect { overflow: hidden; text-overflow: ellipsis; position: relative; }
+.multiselect.dropdown-toggle::after{ border-style: solid; border-width: 0 2px 2px 0; border-color: transparent #adb5bd #adb5bd transparent; content: ''; display: block; height: 7px; margin-top: -5px; pointer-events: none; position: absolute; right: 15px; left: auto; top: 50%; transform-origin: 66% 66%; transform: rotate(45deg); transition: all .15s ease-in-out; width: 7px; }
+.multiselect.dropdown-toggle.show::after{ border-width: 0 2px 2px 0; margin-top: -5px; border-color: transparent #adb5bd #adb5bd transparent; transform: rotate(-135deg); }
+.multiselect .multiselect-selected-text.none{ color: #999;}
+.multiselect-container { position: absolute; list-style-type: none; margin: 0; padding: 8px 10px !important; width: 100%; }
+.multiselect-container .multiselect-reset .input-group { width: 93%; }
+.multiselect-container .multiselect-filter { padding: 0 0 5px; }
+.multiselect-container .multiselect-filter input{ padding-left: 8px; padding-right: 8px;}
+.multiselect-container .multiselect-option.multiselect-group-option-indented { padding-left: 1.75rem; }
+.multiselect-container .multiselect-option,
+.multiselect-container .multiselect-group,
+.multiselect-container .multiselect-all { padding: 5px 8px; }
+.multiselect-container .multiselect-option.dropdown-item,
+.multiselect-container .multiselect-group.dropdown-item,
+.multiselect-container .multiselect-all.dropdown-item,
+.multiselect-container .multiselect-option.dropdown-toggle,
+.multiselect-container .multiselect-group.dropdown-toggle,
+.multiselect-container .multiselect-all.dropdown-toggle { cursor: pointer; }
+.multiselect-container .multiselect-option .form-check-label,
+.multiselect-container .multiselect-group .form-check-label,
+.multiselect-container .multiselect-all .form-check-label { cursor: pointer; }
+.multiselect-container .multiselect-option.active:not(.multiselect-active-item-fallback),
+.multiselect-container .multiselect-group.active:not(.multiselect-active-item-fallback),
+.multiselect-container .multiselect-all.active:not(.multiselect-active-item-fallback),
+.multiselect-container .multiselect-option:not(.multiselect-active-item-fallback):active,
+.multiselect-container .multiselect-group:not(.multiselect-active-item-fallback):active,
+.multiselect-container .multiselect-all:not(.multiselect-active-item-fallback):active { background-color: #f3f7f9 !important; }
+.multiselect-container .multiselect-option:hover,
+.multiselect-container .multiselect-group:hover,
+.multiselect-container .multiselect-all:hover,
+.multiselect-container .multiselect-option:focus,
+.multiselect-container .multiselect-group:focus,
+.multiselect-container .multiselect-all:focus { background-color: #f3f7f9 !important; }
+.multiselect-container .multiselect-option:focus,
+.multiselect-container .multiselect-group:focus,
+.multiselect-container .multiselect-all:focus { outline: none; }
+.multiselect-container .form-check.radio{ padding-left: 0;}
+.multiselect-container .form-check.radio input{ display: none;}
